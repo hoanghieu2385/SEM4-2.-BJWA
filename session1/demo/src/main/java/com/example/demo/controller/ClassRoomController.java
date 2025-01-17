@@ -3,9 +3,7 @@ package com.example.demo.controller;
 import com.example.demo.entities.ClassRoom;
 import com.example.demo.services.ClassRoomService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -21,5 +19,15 @@ public class ClassRoomController {
     public List<ClassRoom> findAll() {
         var classRooms = classRoomService.getClassRoomList();
         return classRooms;
+    }
+
+    @PostMapping("/add")
+    public void addClassRoom(@RequestBody ClassRoom classRoom) {
+        try {
+            classRoomService.addClassRoom(classRoom);
+            System.out.println("Add ClassRoom Success");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

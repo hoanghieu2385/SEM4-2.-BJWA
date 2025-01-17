@@ -15,4 +15,10 @@ public class ClassRoomService implements IClassRoomService {
         var classRoomList = classRoomRepositoty.findAll();
         return classRoomList;
     }
+
+    @Override
+    public void addClassRoom(ClassRoom classRoom) {
+        classRoomRepositoty.save(classRoom);
+    }
+
 }

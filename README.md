@@ -11,3 +11,5 @@
     - chọn Spring Web, MySQL Driver, Spring Data JPA, Spring Boot DevTools
     - Create
 
+- Thứ tự: Database -> Repository -> Service -> Controller
+- kết quả: [api/v1/classroom/list](http://localhost:8080/api/v1/classroom/list)
