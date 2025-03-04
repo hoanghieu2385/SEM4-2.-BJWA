@@ -21,6 +21,6 @@ public class ClassRoomController {
     String index(Model model) {
         var classRooms = this.classRoomService.getClassRoomList();
         model.addAttribute("classRooms", classRooms);
-        return "index";
+        return "monitor/class/indexClass";
     }
 }

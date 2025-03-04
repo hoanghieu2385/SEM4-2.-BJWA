@@ -26,3 +26,43 @@
         - Thực hiện validate dữ liệu
 
 - Hướng dẫn các bước: tạo repository, service, controller, entities, dto, viết lại query truy vấn trong repository.
+
+---
+### Session 3:
+- học về security (sử dụng jwt)
+
+---
+### Session 3.5:
+- Ngày nay có rất nhiều những lỗ hổng an ninh trong các ứng dụng công nghệ thông tin, hãy tìm hiểu về các cách thức tấn công một hệ thống, các câu chuyện xung quanh và đưa ra các bài học kinh nghiệm
+- JWT là một phần quan trọng giúp giảm thiểu nguy cơ bị mất mát thông tin, mất an toàn hệ thống. Nghiên cứu về JWT, đưa ra các ví dụ áp dụng trong việc phát triển ứng dụng phần mềm hiện đại
+- Các bước:
+    - B1: RSA, tạo public key, private key
+    - B2: cấu hình spring security (database)
+    - B3: JWT trong spring ( oauth 2)
+    - B4: Tạo api ( sinh token và test)
+
+---
+### Session 4:
+- Create new project:
+	- Spring web
+	- Oauth2 resource server
+	- Dev tool
+	- Spring configuration processor
+	- Security Scheme
+	
+- Các bước đã làm:
+	- B1: Tạo AuthController
+	- B2: Tạo ProductController    <- cái này để test 
+	- B3: Trong Configs tạo file class kiểu "record": RsaKeyProperties
+	
+	
+- Controllers -> Configs -> 
+
+
+---
+### Session X:
+
+
+
+---
+### Session X:
