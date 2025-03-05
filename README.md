@@ -54,6 +54,7 @@
         * Terminal (trong thư mục chứa key):
 
         ```bash
+        :: Cứ copy rồi paste vào cmd là chạy được :D
         :: Tạo private key
         openssl genrsa -out private_key.pem 2048
 
