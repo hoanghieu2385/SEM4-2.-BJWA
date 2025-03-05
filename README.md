@@ -49,7 +49,7 @@
     2.  **Tạo private key và public key:**
         * PowerShell (admin): 
             
-            `choco install openssl -y`
+                choco install openssl -y
         
         * Terminal (trong thư mục chứa key):
 
