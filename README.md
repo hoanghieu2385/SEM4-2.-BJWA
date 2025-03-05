@@ -45,12 +45,12 @@
     * springdoc-openapi-starter-webmvc-ui
 * **Các bước đã thực hiện và thứ tự tạo/chỉnh sửa file/folder:**
 
-    1.  **configs:** Tạo `RsaKeyProperties.java` (record) để định nghĩa cấu hình RSA keys.
+    1.  **configs:** Tạo `RsaKeyProperties.java` ( **Kiểu record** ) để định nghĩa cấu hình RSA keys.
     2.  **Tạo private key và public key:**
-        * PowerShell (admin): 
-            
+        * PowerShell (admin):
+
                 choco install openssl -y
-        
+
         * Terminal (trong thư mục chứa key):
 
         ```bash
@@ -74,5 +74,18 @@
     1.  **Controllers:** Xử lý các request từ client và gọi các service.
     2.  **Configs:** Cấu hình các beans và properties cần thiết.
     3.  **Security:** Cấu hình bảo mật, xác thực và phân quyền.
+
+**Sử dụng Postman:**
+
+        * Tạo request `GET` đến `http://localhost:8080/api/v1/auth/token` với body JSON chứa username và password.
+
+            {
+                "username": "root",
+                "password": 123456
+            }
+
+        * Tạo request `GET` đến `http://localhost:8080/api/v1/product/list`.
+        * Trong tab "Authorization", chọn "Bearer Token" và nhập `{{jwtToken}}`.
+        * Gửi request để kiểm tra API được bảo vệ.
 
 ### Các session tiếp theo (Session X...)
