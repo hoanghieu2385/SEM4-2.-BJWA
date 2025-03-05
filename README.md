@@ -35,8 +35,6 @@
     3.  Tích hợp JWT trong Spring (OAuth 2)
     4.  Tạo API sinh token và API test
 
-# SEM4-2.-BJWA
-
 ### Session 4: OAuth2 Resource Server
 
 * **Tạo project mới:**
@@ -49,14 +47,17 @@
 
     1.  **configs:** Tạo `RsaKeyProperties.java` (record) để định nghĩa cấu hình RSA keys.
     2.  **Tạo private key và public key:**
-        * PowerShell (admin): `choco install openssl -y`
+        * PowerShell (admin): 
+            
+            `choco install openssl -y`
+        
         * Terminal (trong thư mục chứa key):
 
         ```bash
-        # Tạo private key
+        :: Tạo private key
         openssl genrsa -out private_key.pem 2048
 
-        # Tạo public key từ private key
+        :: Tạo public key từ private key
         openssl rsa -in private_key.pem -pubout -out public_key.pem
         ```
         * Tạo xong nhớ add đường dẫn trong `application.properties` (ví dụ: `rsa.public-key=/certs/public_key.pem`).
@@ -72,6 +73,5 @@
     1.  **Controllers:** Xử lý các request từ client và gọi các service.
     2.  **Configs:** Cấu hình các beans và properties cần thiết.
     3.  **Security:** Cấu hình bảo mật, xác thực và phân quyền.
-
 
 ### Các session tiếp theo (Session X...)
