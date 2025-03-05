@@ -58,6 +58,15 @@
 	
 - Controllers -> Configs -> 
 
+- Cách tạo file private_key và public_key
+    - powershell (chạy admin): choco install openssl -y
+    - sau đó vào thư mục cần tạo key và chạy cmd:
+        # Tạo private key
+        openssl genrsa -out private_key.pem 2048
+
+        # Tạo public key từ private key
+        openssl rsa -in private_key.pem -pubout -out public_key.pem
+
 
 ---
 ### Session X:
