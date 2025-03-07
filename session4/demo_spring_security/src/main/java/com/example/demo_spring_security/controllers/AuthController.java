@@ -27,6 +27,7 @@ public class AuthController {
                 .authenticate(new UsernamePasswordAuthenticationToken(userLogin.getUsername(), userLogin.getPassword()));
         return new Token(tokenService.generateToken(authentication));
     }
+
     @GetMapping("/test")
     public  String Test(){
         return "Test auth";
